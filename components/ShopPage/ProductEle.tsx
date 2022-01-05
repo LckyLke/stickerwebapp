@@ -1,5 +1,5 @@
 import { CustomPlaceholder } from "react-placeholder-image"
-const ProductEle = ({productName: text, }) => {
+const ProductEle = () => {
     return (
         <div className="border text-slate-800 p-2 rounded-lg bg-neutral-100">
             <span>Sticker Set 1</span>

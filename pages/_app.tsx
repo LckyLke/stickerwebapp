@@ -1,7 +1,11 @@
 import '../styles/globals.css'
 import Navbar from '../components/LandingPage/Navbar'
+import useWindowDimensions from '../lib/useWindowDimensions'
 function MyApp({ Component, pageProps }) {
-  return <div className='bg-zinc-900 h-screen'>
+  const {height} = useWindowDimensions()
+  return <div className='bg-zinc-900' style={{
+     minHeight: height,
+  }}>
   <Navbar/>
   <Component {...pageProps} />
   </div>

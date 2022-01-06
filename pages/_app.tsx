@@ -1,14 +1,13 @@
 import '../styles/globals.css'
 import Navbar from '../components/LandingPage/Navbar'
 import useWindowDimensions from '../lib/useWindowDimensions'
+import Div100vh from 'react-div-100vh'
 function MyApp({ Component, pageProps }) {
-  const {height} = useWindowDimensions()
-  return <div className='bg-zinc-900' style={{
-     minHeight: height,
-  }}>
+  
+  return <Div100vh className='bg-zinc-900'>
   <Navbar/>
   <Component {...pageProps} />
-  </div>
+  </Div100vh>
 }
 
 export default MyApp
